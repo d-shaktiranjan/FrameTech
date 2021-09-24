@@ -1,9 +1,18 @@
 {% extends 'base.html' %}
 
+{% block links %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/land.css' %}">
+{% endblock links %}
+
 {% block title %}Frame Tech{% endblock title %}
 
 {% block body %}
-<div class="container">
-    <h1>hey hey boi</h1>
+<div class="container text-center">
+    <img src="{% static 'img/loginAnimation.gif' %}" alt="">
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary" type="button">Login</button>
+        <button class="btn btn-primary" type="button">Signup</button>
+    </div>
 </div>
 {% endblock body %}
